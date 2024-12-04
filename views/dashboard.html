@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Tableau de Bord</h1>
+    <h2>Gérer vos Fichiers</h2>
+    <form id="uploadForm">
+        <input type="hidden" name="action" value="upload">
+        <label>Nom du fichier:</label>
+        <input type="text" name="filename" required>
+        <br>
+        <label>Contenu du fichier:</label>
+        <textarea name="filecontent" required></textarea>
+        <br>
+        <button type="submit">Télécharger</button>
+    </form>
+    <div id="response"></div>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
